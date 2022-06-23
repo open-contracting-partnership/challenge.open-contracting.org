@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest.html">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#c9d300">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel='stylesheet' id='wp-block-library-css'  href='en/wp-includes/css/dist/block-library/style.min.css%3Fver=6.0.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('en.html');--wp--preset--duotone--grayscale: url('en.html');--wp--preset--duotone--purple-yellow: url('en.html');--wp--preset--duotone--blue-red: url('en.html');--wp--preset--duotone--midnight: url('en.html');--wp--preset--duotone--magenta-yellow: url('en.html');--wp--preset--duotone--purple-green: url('en.html');--wp--preset--duotone--blue-orange: url('en.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='style-css'  href='en/wp-content/themes/hackathon/assets/css/main.min.css%3Fver=6.0.css' type='text/css' media='all' />
+<script type='text/javascript' src='en/wp-content/themes/hackathon/assets/js/min/front.bundle.js%3Fver=1' id='jquery-fancybox-js'></script>
+<link rel='shortlink' href='en.html' />
+<link rel="alternate" hreflang="en" href="en.html" title="en_US" />
+<link rel="alternate" hreflang="ru" href="index.html" title="ru_RU" />
+<link rel="icon" href="en/wp-content/uploads/sites/4/2021/04/cropped-ocp-favicon-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="en/wp-content/uploads/sites/4/2021/04/cropped-ocp-favicon-2-180x180.png" />
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35677147-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-35677147-1');
+</script>    </head>
+<body class="front-page">
+
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+                    <div class="header-logo">
+                <img src="en/wp-content/themes/hackathon/assets/img/logo.svg" width="190" alt=""/>
+            </div>
+                <nav class="header-nav">
+            <div class="menu-main-container"><a href="https://forms.gle/wF7GXA1yu8u6N9Um7">Apply</a>
+<a href="en/index.html%3Fp=135.html">Program</a>
+<a href="en/index.html%3Fp=137.html">FAQ</a>
+<a href="en/index.html%3Fp=241.html">Best Practices</a>
+</div>
+                            <div class="dropdown">
+                    <div class="selected">English</div>
+                    <div class="dropdown-drop text-center">
+                                                    <a href="index.html">Русский</a>
+                                            </div>
+                </div>
+                    </nav>
+        <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+
+
+
+<!-- SLIDER -->
+<div class="fs-slider">
+    <img src="en/wp-content/themes/hackathon/assets/img/green-circle.svg" class="fs-slider__circle" alt="" / >
+            <div class="slick-dot-slider">
+                            <div class="fs-slider__slide">
+                    <img src="en/wp-content/uploads/sites/4/2021/04/moldova.svg" alt="">
+                </div>
+                            <div class="fs-slider__slide">
+                    <img src="en/wp-content/uploads/sites/4/2021/04/kazakh.svg" alt="">
+                </div>
+                            <div class="fs-slider__slide">
+                    <img src="en/wp-content/uploads/sites/4/2021/04/kyrgyz.svg" alt="">
+                </div>
+                    </div>
+        <section class="fs-slider__content">
+        <div class="container">
+            <div>
+                <h1>Open Contracting <br>Innovation Challenge <br>2021</h1>
+                <p><strong>for Moldova, Kazakhstan</strong><br />
+<strong>&amp; Kyrgyzstan</strong></p>
+            </div>
+            <div class="text-right">
+            <span class="text-center d-inline-block">
+                                    <a href="https://forms.gle/wF7GXA1yu8u6N9Um7" target="_blank" class="btn btn-green uppercase bold">Apply now</a>
+                                <span class="green">DEADLINE  15  May  2O21</span>
+            </span>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- END SLIDER -->
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Background <br/>about open contracting</h2>
+            <div class="about-text">
+                <div>
+                    <p>Public contracting is the largest marketplace in the world.<br />
+Governments spend around $13 trillion dollars a year on contracts with private companies: this spending is vital to deliver services to citizens, to public governance, and to global development.</p>
+<p>Yet many governments don’t seem to know what they are buying and selling, for how much, and with whom they are dealing. Contracting is the government&#8217;s number one corruption risk (the <a href="https://www.oecd.org/gov/public-procurement/">OECD</a>, <a href="https://www.unodc.org/documents/corruption/Publications/2013/Guidebook_on_anti-corruption_in_public_procurement_and_the_management_of_public_finances.pdf">UNODC</a>, and <a href="https://ec.europa.eu/home-affairs/sites/default/files/e-library/documents/policies/organized-crime-and-human-trafficking/corruption/docs/acr_2014_en.pdf">EU</a> all agree).</p>
+<p>Open contracting seeks to transform public procurements by opening up the entire chain of public procurement data and documents from planning to tender, contract, implementation and works with local reformers to put that data to use, so that the money in public procurement is spent more effectively, honestly and fairly.</p>
+                </div>
+                <div>
+                    <h3>Open contracting has the potential to:</h3>
+<ul>
+<li>Improve public integrity, including identifying red flags by scrutinizing who wins and delivers contracts, when, how, and for what.</li>
+<li>Track delivery and quality of goods and services and milestones in implementation.</li>
+<li>Promote opportunities for businesses by enabling them to understand what government buys and what past contracts look like.</li>
+<li>Improve value for money by enabling government agencies to analyze key procurement indicators to find ways to save.</li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+    <!-- OBJECTIVES -->
+    <section class="objectives" id="objectives">
+        <img src="en/wp-content/themes/hackathon/assets/img/objectives-circle.svg" class="objectives-img1" alt=""/>
+        <div class="container">
+            <div class="objectives-text">
+                <p>&nbsp;</p>
+<h2>Objectives<br />
+of the Challenge</h2>
+<p>The challenge aims to support the creation of tools based on open contracting data.<br />
+We want to encourage collaborations &amp; partnerships of non-governmental actors with central &amp; local authorities creating innovations that contribute to:</p>
+            </div>
+            <div class="objectives-items">
+                <img src="en/wp-content/themes/hackathon/assets/img/objectives-dots-cloud.svg" class="objectives-items__img1" alt=""/>
+                <img src="en/wp-content/themes/hackathon/assets/img/objectives-gears.svg" class="objectives-items__img2" alt=""/>
+                <img src="en/wp-content/themes/hackathon/assets/img/objectives-circle2.svg" class="objectives-items__img3" alt=""/>
+                                <div class="objectives-items__block" >
+                    <div class="objectives-items__block_title">Support</div>
+                    <p>Support data-driven analysis, financial & civic control over public spending</p>
+                </div>
+                                <div class="objectives-items__block" >
+                    <div class="objectives-items__block_title">Empower</div>
+                    <p>Empower authorities to deliver better value for money and  boost their efficiency</p>
+                </div>
+                                <div class="objectives-items__block" >
+                    <div class="objectives-items__block_title">Create</div>
+                    <p>Create fairer competition</p>
+                </div>
+                                <div class="objectives-items__block" >
+                    <div class="objectives-items__block_title">Detect</div>
+                    <p>Detect and prevent fraud & corruption</p>
+                </div>
+                                <div class="objectives-items__block" >
+                    <div class="objectives-items__block_title">Drive</div>
+                    <p>Drive effective goods & service delivery for citizens</p>
+                </div>
+                            </div>
+        </div>
+    </section>
+    <!-- END OBJECTIVES -->
+    <!-- PARTICIPANTS -->
+    <section class="participants">
+        <div class="container">
+            <h2><span>Participants will receive</span></h2>
+            <div class="participants-row">
+                
+                    <div class="participants-item">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/part1.svg" alt=""/>
+                        <p><b>Weekly check-in calls</b> with mentors, invited experts &amp; <a href="https://www.open-contracting.org/">OCP team</a> members to help your projects evolve</p>
+                    </div>
+                                                        
+                    <div class="participants-item">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/part2.svg" alt=""/>
+                        <p>9 teams that will get to the finals (3 per country) will receive <b>$ 5,000 USD</b> of <b>seed funding</b> to develop their projects</p>
+                    </div>
+                                                        
+                    <div class="participants-item">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/part3.svg" alt=""/>
+                        <p><b>Finalists will receive approximately 20 hours of OCP technical assistance</b> per team throughout the program</p>
+                    </div>
+                                                <div class="participants-line"></div>
+                                                        
+                    <div class="participants-item">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/part4.svg" alt=""/>
+                        <p><b>Finalists will get priority access to <a href="https://www.open-contracting.org/data-standard">OCDS helpdesk</a></b> and data analysis support if relevant for the project, with up to 20 hours per project</p>
+                    </div>
+                                                        
+                    <div class="participants-item">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/part5.svg" alt=""/>
+                        <p><b>Three grand prizes of $15,000 USD each</b> (1 per country) of direct financial support over the course of the program, depending on team progress and needs.<br />
+<i>(Note: teams must demonstrate progress and momentum prior to receiving financial support)</i></p>
+                    </div>
+                                                        
+                    <div class="participants-item">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/part6.svg" alt=""/>
+                        <p><b>Winners will receive</b> support for documentation, and communication from OCP comms consultants to develop 1 blog/story and other communication materials.</p>
+                    </div>
+                                                                    <div class="participants-line right"></div>
+                                    
+                    <div class="participants-item">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/part7.svg" alt=""/>
+                        <p><b>Connections and collaboration with a global network, </b>including other reform teams, experts and funders, to share ideas and learn together on the journey to achieving impact, as well as celebrate and elevate success in global fora, such as conferences.</p>
+                    </div>
+                                                                    </div>
+        </div>
+    </section>
+    <!-- END PARTICIPANTS -->
+    <!-- WHO CAN -->
+    <section class="who-can">
+        <img src="en/wp-content/themes/hackathon/assets/img/who-circle.svg" class="who-can__img1" alt=""/>
+        <img src="en/wp-content/themes/hackathon/assets/img/monitor.png" class="who-can__img3" alt=""/>
+        <img src="en/wp-content/themes/hackathon/assets/img/objectives-dots-cloud.svg" class="who-can__img2" alt=""/>
+        <div class="container">
+            <div>
+                <h2><span>Who can apply</span></h2>
+                <p><b>Innovation Challenge 2021 in the EECA region supports projects from Moldova, Kazakhstan &amp; Kyrgyzstan.</b></p>
+<p>We are looking for data journalists, civic technologists, hackers, open data enthusiasts, citizen activists &amp; government innovators who understand the transformational impact on people’s lives that better public contracting can have.</p>
+<p>If you have any doubts about applying for the Innovation Challenge, register and come to the Q&amp;A sessions and ask all your questions on<a href="https://zoom.us/meeting/register/tJUrd-mupjIsH9RPCluRe8DimGp7sQfiAhxc">30 April</a> and <a href="https://zoom.us/meeting/register/tJ0rdu-vpjwqGNZoRYURKVbLq-pofc1k8G4Z">6 May</a>.</p>
+            </div>
+        </div>
+    </section>
+    <!-- END WHO CAN -->
+    <!-- ELIGIBILITY -->
+    <section class="eligibility">
+        <div class="container">
+            <h2 class="text-center">Eligibility criteria</h2>
+            <div class="eligibility-text">Use this self-evaluation checklist to see if you meet eligibility criteria:</div>
+            <img src="en/wp-content/themes/hackathon/assets/img/eligibility-circle.svg" alt="" class="eligibility-img1">
+                            <div class="eligibility-line">
+                                            <div class="eligibility-item">
+                            Your team has to represent civil society, or government-civil society partnership, of one of the following countries - Moldova, Kazakhstan, or Kyrgyzstan, pursuing a project that aims to develop a tool using open contracting data                        </div>
+                                            <div class="eligibility-item">
+                            You have to be able to dedicate significant energy and time to this project so that you can pursue your idea and make consistent progress.                        </div>
+                                            <div class="eligibility-item">
+                            Your team members should have a working level of Russian & a basic level of English to benefit from group seminars and exchanges.                        </div>
+                                            <div class="eligibility-item">
+                            For a complete list of eligibility criteria & limitations, see the Innovation Challenge 2021 <a href="en/index.html%3Fp=314.html">guiding materials</a>.                        </div>
+                                    </div>
+            
+        </div>
+    </section>
+    <!-- END ELIGIBILITY -->
+    <!-- PROPOSAL -->
+    <section class="proposal">
+        <div class="container">
+            <h2>What a good proposal looks like</h2>
+            <div class="proposal-row">
+                <div>
+                                                                        <div class="proposal-item">
+                                <div class="proposal-item__title">The Team</div>
+                                <p>Ideally, teams should include experts in public procurement, advocacy, and technical/IT expert. However we can help to find relevant technical experts if needed.</p>
+                            </div>
+                                                    <div class="proposal-item">
+                                <div class="proposal-item__title">Open Data</div>
+                                <p>Projects need to use open data. The priority is to use procurement data published using the <a href="https://standard.open-contracting.org/latest/en/#">Open Contracting Data Standard</a> and/or the <a href="https://standard.open-contracting.org/infrastructure/latest/en/#">Open Contracting for Infrastructure Data Standard</a> (OC4IDS) but can also use other open contracting data. We encourage projects to find ways to make closed data more accessible and actionable. Ideally use one of the available APIs to public procurement systems of <a href="https://public.mtender.gov.md/tenders">Moldova</a>, <a href="https://goszakup.gov.kz/ru/developer/ows_v2?fbclid=IwAR1RCjH_YyB6z3zQwap_w1uRabzyBqYl-U8MxhFL-aVc6OmO3-FgptJHDNI#graphql-%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85-%d1%81-%d0%be%d0%b1%d1%8a%d0%b5%d0%ba%d1%82%d0%b0">Kazakhstan</a>, <a href="https://analytics.zakupki.gov.kg/api-export">Kyrgyzstan</a>. Applicants may use any other data sources to strengthen their<br />
+projects (eg. beneficial owners, assets declarations, etc).</p>
+                            </div>
+                                                    <div class="proposal-item">
+                                <div class="proposal-item__title">Open Source</div>
+                                <p>Our preference is for open source and openly licensed projects.</p>
+                            </div>
+                                                            </div>
+                <div>
+                                                                        <div class="proposal-item">
+                                <div class="proposal-item__title">Result-oriented</div>
+                                <p>Tools are powerful but transformation comes from their use. Winning projects need to demonstrate how they will apply the tools to achieve real change.</p>
+                            </div>
+                                                    <div class="proposal-item">
+                                <div class="proposal-item__title">Measurable</div>
+                                <p>We love key performance indicators and other hard M&amp;E measures. We want to know how projects are planning to track<br />
+their progress and impact.</p>
+                            </div>
+                                                    <div class="proposal-item">
+                                <div class="proposal-item__title">Added value</div>
+                                <p>Innovations are clearly added value to existing work and the funding provided is catalytic to the organization</p>
+                            </div>
+                                                    <div class="proposal-item">
+                                <div class="proposal-item__title">Collaborative</div>
+                                <p>We believe that innovation often comes from collaboration. We encourage that projects involve stakeholders from the government or local authorities and civil society sectors.</p>
+                            </div>
+                                                            </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PROPOSAL -->
+    <!-- SCHEDULE -->
+    <section class="schedule">
+        <div class="container">
+            <h2>Challenge schedule</h2>
+        </div>
+                    <div>
+                                        <div class="schedule-item">
+                            <div class="container">
+                                <div class="schedule-item__text">
+                                    <div class="schedule-item__title">Entries open</div>
+                                    <p>The Innovation Challenge will be open for entries from 15 April until 15 May. During this month we will have two Q&amp;A sessions &#8211; <a href="https://zoom.us/meeting/register/tJUrd-mupjIsH9RPCluRe8DimGp7sQfiAhxc">30 April</a> &amp; <a href="https://zoom.us/meeting/register/tJ0rdu-vpjwqGNZoRYURKVbLq-pofc1k8G4Z">6 May</a> for all your questions. To enter, participants must complete the <a href="https://forms.gle/4R7mXjxpiwNMRxXe8">application form</a>.</p>
+                                </div>
+                                <div class="schedule-item__date">
+                                    <div>
+                                        15 April 2021<br />
+15 May 2021                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="schedule-item">
+                            <div class="container">
+                                <div class="schedule-item__text">
+                                    <div class="schedule-item__title">Announcement of selected participants of incubation phase</div>
+                                    <p>All entries will be assessed for compliance with the <a href="en/index.html%3Fp=314.html">eligibility criteria</a>. All teams that pass the eligibility criteria proceed to Phase 1 of the Incubation. Participants for Phase 1 will be announced on 21 May.</p>
+                                </div>
+                                <div class="schedule-item__date">
+                                    <div>
+                                        21 May 2021                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="schedule-item">
+                            <div class="container">
+                                <div class="schedule-item__text">
+                                    <div class="schedule-item__title">Incubation Phase 1</div>
+                                    <p>Participants will take part in four weekly online workshops to strengthen their project proposals with a focus on the theory of change, collaborative approaches of civic tech start-ups with government, civic tech sustainability, and accessing procurement data via API in <a href="https://public.mtender.gov.md/tenders">Moldova</a>, <a href="https://goszakup.gov.kz/ru/developer/ows_v2?fbclid=IwAR1RCjH_YyB6z3zQwap_w1uRabzyBqYl-U8MxhFL-aVc6OmO3-FgptJHDNI#graphql-%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85-%d1%81-%d0%be%d0%b1%d1%8a%d0%b5%d0%ba%d1%82%d0%b0">Kazakhstan</a> &amp; <a href="http://ocds.zakupki.gov.kg/api-export">Kyrgyzstan</a>. Participants will have one month to progress their projects and to prepare an up to 5-minute long video presentation about their project (this can be a simple screen recording with audio). All projects will be evaluated according to the <a href="en/index.html%3Fp=319.html">judging criteria</a>. Finalists of the Innovation Challenge will be announced by 29 June. The nine strongest teams (three projects per country) will receive financial support of US$5000 each, and tailored incubation support during Phase 2.</p>
+                                </div>
+                                <div class="schedule-item__date">
+                                    <div>
+                                        21 May 2021<br />
+21 June 2021                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="schedule-item">
+                            <div class="container">
+                                <div class="schedule-item__text">
+                                    <div class="schedule-item__title">Incubation Phase 2</div>
+                                    <p>During Phase 2, finalists will receive mentoring and tailored expert support, including workshops, meetings &amp; discussions with officials, developers, donors &amp; other stakeholders to empower their tools implementation, and learning sessions across selected projects. During two months, finalists should develop a minimum viable product (<a href="https://en.wikipedia.org/wiki/Minimum_viable_product">MVP</a>) and start implementing their tools. Finalists should fill in a more <a href="en/index.html%3Fp=308.html">detailed questionnaire</a> until 6 September. Finalists will pitch their tools, highlighting their MVPs, progress during the challenge, plans for further implementation on 10 September. The judges <a href="en/index.html%3Fp=317.html">will select the three winners</a> receiving US$15,000 in financial support each (one per country) to implement their tools.</p>
+                                </div>
+                                <div class="schedule-item__date">
+                                    <div>
+                                        29 June 2021<br />
+10 September 2021                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="schedule-item">
+                            <div class="container">
+                                <div class="schedule-item__text">
+                                    <div class="schedule-item__title">Implementation phase</div>
+                                    <p>Winners will have bi-weekly check-ins with the Open Contracting Partnership team. We will facilitate the advocacy and deliver in-kind support for documenting and communicating via our communication consultants to develop one blog/story about the project and team.</p>
+                                </div>
+                                <div class="schedule-item__date">
+                                    <div>
+                                        10 September 2021<br />
+15 December 2021                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                <img src="en/wp-content/themes/hackathon/assets/img/schedule.svg" alt="" class="schedule-img" />
+    </section>
+    <!-- END SCHEDULE -->
+    <!-- FUND -->
+    <section class="fund">
+        <img src="en/wp-content/themes/hackathon/assets/img/objectives-dots-cloud.svg" class="fund-img" alt=""/>
+        <div class="container">
+            <h2>What will the Challenge fund?</h2>
+            <div class="fund-text"></div>
+                            <div class="fund-row">
+                                            <div class="fund-item">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/fund1.svg" alt=""/>
+                            Tool development cost                        </div>
+                                            <div class="fund-item">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/fund2.svg" alt=""/>
+                            Piloting/testing expenses, including workshops, local travel                        </div>
+                                            <div class="fund-item">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/fund3.svg" alt=""/>
+                            Staff/consultants time                        </div>
+                                            <div class="fund-item">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/fund4.svg" alt=""/>
+                            Admin costs up to 5%                        </div>
+                                    </div>
+                                        <div class="fund-line"></div>
+                <div class="fund-cross">
+                    <img src="en/wp-content/themes/hackathon/assets/img/fund-cross.svg" alt="">
+                    <div><p>The challenge <b>will not fund аny kind of equipment</b></p>
+</div>
+                </div>
+                </section>
+    <!-- END FUND -->
+    <!-- Commitments -->
+    <div class="commitments">
+        <div class="container">
+            <h2>Teams Commitments</h2>
+                            <div class="eligibility-line">
+                                            <div class="eligibility-item">
+                            Teams complete an application form describing your project, team & context                        </div>
+                                            <div class="eligibility-item">
+                            Teams should attend and engage in biweekly check-in calls with OCP (at least one team member from each applicant).                        </div>
+                                            <div class="eligibility-item">
+                            Teams are expected to proactively work to achieve project milestones as articulated in their project plan that they create and refine during the Challenge workshops.                        </div>
+                                            <div class="eligibility-item">
+                            Participants should take part in regular check-ins and calls with program advisors about every 2 weeks, as well as group seminars and in-person workshops through the Innovation Challenge.                        </div>
+                                            <div class="eligibility-item">
+                            We expect teams to have regularly scheduled team working meetings, without OCP.                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <!-- END Commitments -->
+
+    <!-- TEAMS -->
+    <section class="teams container">
+        <h2><span>Teams</span></h2>
+                <div class="teams-slider">
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=407.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/07/itwin-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=407.html" class="simple d-block teams-slider__title">
+                        IT WIN                    </a>
+                    <p><p>IT WIN &#8211; will focus on the development of instruments for price per item comparison and enhance it with a module that may detect the collusion of suppliers via the affiliation in the national company register.</p>
+</p>
+                </div>
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=405.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/07/burkit-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=405.html" class="simple d-block teams-slider__title">
+                        Burkitvis                    </a>
+                    <p><p>Burkitvis &#8211; the team wants to create an open-source red flags identification engine &#038; an engine for context analysis of tender notices &#038; contracts.</p>
+</p>
+                </div>
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=400.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/07/opentender.kz_-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=400.html" class="simple d-block teams-slider__title">
+                        OpenTender.kz                    </a>
+                    <p><p>OpenTender.kz &#8211; will improve the tool for price-per-item comparison by adding a library of user selections, risk indicators, ratings of buyers and suppliers, CPV selection feature).</p>
+</p>
+                </div>
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=398.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/07/ager-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=398.html" class="simple d-block teams-slider__title">
+                        AGER                    </a>
+                    <p><p>AGER &#8211; will develop a set of risk indicators, to be able to detect possible fraudulent procurement procedures. The team will strengthen the tool with a solution for profiling the buyers and suppliers. It should help to collect and structure the data about the violation of the procurement law by both parties.</p>
+</p>
+                </div>
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=396.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/07/kloop-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=396.html" class="simple d-block teams-slider__title">
+                        Kloop Media                    </a>
+                    <p><p>Kloop Media &#8211; they want to set up a red flag engine and a pipeline of communication with the bidders, media, and control agencies to inform them about the violations of the procurement regulations and procedures;</p>
+</p>
+                </div>
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=256.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/positive-initiative-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=256.html" class="simple d-block teams-slider__title">
+                        Positive Initiative                    </a>
+                    <p><p>Positive Initiative &#8211; will construct an aggregator of medicine prices for vital medicines from several sources in Moldova. It will provide an access to the public analytical module that enables price-per-item comparison, analysis of competition, methods of procurement, and procurement efficiency.</p>
+</p>
+                </div>
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=255.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/baa-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=255.html" class="simple d-block teams-slider__title">
+                        BAA.kg                    </a>
+                    <p><p>BAA.kg &#8211; will design the analytical dashboard that will collect information about the medicine prices from the national database of medicines, state statistical service, public procurement portal &#038; pharmaceutical distributors.</p>
+</p>
+                </div>
+                            <div class="teams-slider__slide">
+                    <a href="en/index.html%3Fp=127.html" class="simple d-block">
+                        <img src="en/wp-content/uploads/sites/4/2021/04/datanomix-300x300.jpg" alt="" />
+                    </a>
+                    <a href="en/index.html%3Fp=127.html" class="simple d-block teams-slider__title">
+                        Datanomix                    </a>
+                    <p><p>Datanomix &#8211; proposed a comprehensive approach that includes building a CRM which will identify unjustified restrictions of competition &#038; signs of imitation of competition in tenders (collusion of suppliers), and automatically generate letters to buyers and control agencies.</p>
+</p>
+                </div>
+                    </div>
+            </section>
+    <!-- END TEAMS -->
+
+    <!-- JURY -->
+    <section class="jury">
+        <div class="container">
+            <h2><span>Jury</span></h2>
+                            <div class="jury-slider">
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/06/photo_2021-06-03_11-32-59-310x310.jpg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Arkadiy Seleznev, Managing Director for Development and Export of the Astana Hub</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Managing Director for Development and Export of the Astana Hub (International Technopark of IT Startups Corporate Fund).<br />
+Experience in a leading position in a large international company GS Group. Founder of the IT company Cododrome (Lithuania). He worked as COO at the Russian company YellowRockets. He has experience in organizing and conducting acceleration programs, including managing the most technologically complex tracks of the largest accelerator in Russia and Eastern Europe GenerationS (AeroSpace &#8211; 2015, TechNet &#8211; 2016). Ha was a headliner of the Agro &amp; MedTech and FinTech tracks of the GenerationS 2017 accelerator and the main tracker of the PwC Russia Accelerator 2019-2020, and the main tracker of the accelerator of the international technopark of IT startups Astana Hub 2019.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/05/yahiya-edited-310x310.jpg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Yahiya Tuleshov, Managing Director at SoE «Center for Electronic Finances»</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Yahiya has international work experience in managing and delivering IT projects at the global level. He has been one of the first project managers, who has been certified in PMP (PMI, Inc) and since then delivered many projects both at global and regional levels. After spending time in the UK working for S&amp;P500 companies, he has returned to Kazakhstan to apply his knowledge and experience in the financial services sector. Currently, he works as Managing Director at SoE<span lang="RU"> </span>«Center for Electronic Finances».</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/05/oa1_7846-310x310.jpeg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Pavel Koktyshev, Deputy Chairman of the Board of JSC National Infocommunication Holding Zerde</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>For 10 years Pavel has been working on the development of the Kazakhstani innovation ecosystem. In 2012, he co-founded the MOST business incubator, was an entrepreneur, venture investor until 2018. At various times he worked as director of the Institute for Development and Economic Policy, representative of the Global Entrepreneurship Network in Kazakhstan, high commissioner of the World Business Angels Investment Forum. Member of the Eurasia Policy Group of the World Economic Forum and a graduate of the Global Shapers Community. In March 2018, he was invited to work in the quasi-public sector &#8211; Deputy Chairman of the Board of JSC National Infocommunication Holding Zerde, coordinated the creation and development of Astana Hub and QazInnovation.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/askar2-310x310.png"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Askar Kushkunbayev, Local Budget Initiative Coordinator at Soros Foundation-Kazakhstan</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Askar earned BA in International Journalism from Tashkent State University in 1999. In 2002 he received MA Media Studies degree from the University of Ulster, UK. From 2002 to 2007 he taught journalism courses at Karakalpak State University in Nukus, Uzbekistan. From 2007 to 2009 he served as project coordinator at Eurasia Foundation’s Almaty office. In 2009 Askar joined SFK as a coordinator of transparency and accountability related projects</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/azis-310x310.png"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Azis Abakirov,  Founder of the High-Technology Park of the Kyrgyz Republic</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Founder of the IT company &#8220;<a href="https://www.ut.kg/">Unique Technologies</a>&#8220;, one of the first companies in Kyrgyzstan (since 2003), began to export software development. He was the founder and chairman of the &#8220;Kyrgyz Association of Software Developers and Services&#8221;, the founder of the &#8220;High Technology Park of the Kyrgyz Republic&#8221; and &#8220;IT Academy&#8221;. Promotes the IT ecosystem of the Kyrgyz Republic to the global market with the motto: &#8220;Live in Kyrgyzstan, work with the whole world!&#8221; #KyrgyzstanaZhashapBүtkүlDүynөMenenIshte. The project &#8220;#ProgrammingAyimdar&#8221; contributes to the promotion of female programming, as well as programming among PWDs &#8220;#CheksizProgramming.&#8221; The goal by 2030 is to create 50 thousand IT jobs in the Kyrgyz Republic and train 50 thousand programmers by that time.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/shamil.png"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Shamil Ibraghimov, Executive Director of Soros Foundation-Kyrgyzstan</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Prior to this position, Shamil was the Executive Director of Eurasia Foundation of Central Asia. Shamil has a strong passion for urban development, civic engagement and social innovations. Shamil is a strong advocate for open data in Kyrgyzstan. With his wife Gulnara, they founded KoldoShop, a social enterprise supporting people with disabilities and single mothers in the difficult life situations in Kyrgyzstan to produce felt crafts and generate income. Shamil is a graduate of Harvard University, John F. Kennedy School of Government. He is a Mason fellow and recipient of Mary and David Boies scholarship and Fulbright Fellowship.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/volodymyr-tarnay.jpg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Volodymyr Tarnay, Manager at Open Contracting Partnership</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Before joining the Open Contracting Partnership, Volodymyr was head of the Budget Policy Department at the Ukrainian NGO Center Eidos, focusing on budget transparency, good governance, and public finance management at the national and municipal level. He has advocated for open data as a member of working groups under Ukraine’s Ministry of Finance and the state agency of e-governance, Open Government Partnership, International Budget Partnership, CoST Ukraine, and the Reanimation Package of Reform Initiative. He has experience in developing solutions and tools aimed at boosting the accountability of public spending, becoming a finalist of hackathons such as the EU Eastern Partnership Hackathon, Open Data Challenge, Taiwan Presidential Hackathon, DataFest Tbilisi and others.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/dinara2-310x310.png"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Dinara Musabekova, Director of the Civil Society Initiative at the University of Central Asia</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Dinara Musabekova has over 18 years of experience in civil society. She holds the position of regional research and advocacy expert for the USAID Civil Society Development Project in Central Asia (CSSP). Within the CSSP Dinara established the School of Applied Research to exchange experience and develop a policy analysis on transparency and accountability in public administration. He is a member of the Open Government Forum (OGP) in the Kyrgyz Republic. Before joining the University of Central Asia, she was the Eurasia Foundation Executive Director in Central Asia (EFCA). She has developed many projects aimed at improving local governance, human rights, the rule of law, civic education, conflict mitigation and management, governance, and strengthening legislation that directly benefits civil society actors. At the Soros Foundation, she was the Director of the Public Governance Program and supported think tanks and Kyrgyzstan&#8217;s expert community.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/anastasiya-kozlovtseva-photo-scaled-e1610373916340-1-310x310.jpg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Anastasiya Kozlovtseva, Program Officer of the Open Government Partnership</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Anastasiya joined the Open Government Partnership Support Unit as a program officer for the Eastern Partnership program. Prior to OGP she was a Head of International Relations &amp; Development at Transparency International Ukraine. In 2013-2016 she has coordinated projects related to good governance and Open Government Partnership and since September 2017 became a Head of International Relations at TI Ukraine. Anastasiya was responsible for donor and international affairs, advocacy among the international community including the main strategic partners of Ukraine. She coordinated cooperation with other chapters of Transparency International and its headquarters as well as the development of new programs in the organization.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/dsc4266-1-310x310.jpg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Gabriela Cuneva, State Secretary, Ministry of Finance of Moldova</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>On the 3rd of Jan 2020, Gabriela Cuneva was appointed to the State Secretary of the Ministry of Finance position. Prior to the Ministry, Gabriela was a Partner of the audit consulting company AskMe SRL, worked as the financial director of the periodical advertising newspaper network Makler SRL and senior consultant, the audit consulting company PriceWaterhouseCoopers Audit SRL.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/nurida-310x310.jpg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Nurida Baizakova, Director of the Public Procurement Department under the Ministry of Finance of the Kyrgyz Republic</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Nurida, has been working on various positions in the Ministry of Finance of the Kyrgyz Republic since 2000. Since February 2019, she has been appointed to be the Director of the Public Procurement Department under the Ministry of Economy and Finance of the Kyrgyz Republic. Under the leadership of Nurida Bayzakova, the Public Procurement Department is taking active measures to improve legislation, improve the e-procurement system and ensure transparency and accountability in public procurement of the Kyrgyz Republic.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/netulia-310x310.png"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Viktor Nestulia, Senior Manager at Open Contracting Partnership</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                <p>Before joining the Open Contracting Partnership, Viktor was acting CEO at SOE Medical Procurement of Ukraine – the central purchasing body set up by the Ministry of Health of Ukraine for medical public procurement. Between 2015-2018 he was a Program Director at Transparency International Ukraine. His portfolio included five significant initiatives – ProZorro, ProZorro.Sale systems development, DOZORRO community building, e-Health system development, and Construction Sector Transparency Initiative implementation.  He has experience in the private sector and in government. He headed the procurement risk assessment division in one of the biggest agro-holdings of Ukraine and worked in the Ministry of Infrastructure of Ukraine.</p>
+                            </div>
+                        </div>
+                                            <div class="jury-slider__slide">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/ana-chirița-strategic-projects-director-310x310.jpg"
+                                 alt=""/>
+                            <div>
+                                <div class="jury-slider__title">Ana Chirița, Strategic Projects Director at the Moldovan Association of ICT Companies</div>
+                                <div class="jury-slider__description">
+                                                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </section>
+    <!-- END JURY -->
+
+    <!-- PARTNERS -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="text-center"><span>Our partners</span></h2>
+                            <div class="partners-slider">
+                                            <div class="partners-slider__slide">
+                            <a href="http://company.com" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/3614985-e1618384694828.jpg"
+                                     alt="Ministry of Finance of Moldova" title="Ministry of Finance of Moldova"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://www.opengovpartnership.org/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/ogp_logo_rgb-e1558363106511-1024x878-1-e1618384706402.png"
+                                     alt="Open Government Partnership" title="Open Government Partnership"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://www.ebrd.com/home" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/ebrd-logo-final-130x130.jpg"
+                                     alt="EBRD" title="EBRD"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://www.gov.kz/memleket/entities/minfin?lang=ru" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/emblem_of_kazakhstan.svg-e1618384722699.png"
+                                     alt="Ministry of Finance of Kazakhstan" title="Ministry of Finance of Kazakhstan"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="http://www.minfin.kg/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/logo-e1619701856979.png"
+                                     alt="Ministry of Finance of Kyrgyzstan" title="Ministry of Finance of Kyrgyzstan"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://eurasia.org/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/eurasia-e1618384894814.jpg"
+                                     alt="Eurasia Foundation Civil Society Support Program in Central Asia" title="Eurasia Foundation Civil Society Support Program in Central Asia"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://www.usaid.gov/central-asia-regional" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/vertical_rgb_294-e1618384907301.jpg"
+                                     alt="USAID" title="USAID"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://ecc.kz/ru" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/1569822346_97b19c834c990d1b48fcd9538947cf09-e1618384792841.jpg"
+                                     alt=" Center for Electronic Finance" title=" Center for Electronic Finance"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://astanahub.com/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/risunok1-e1618384803343.jpg"
+                                     alt="Astana HUB" title="Astana HUB"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://www.kssda.kg/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/kssda-logo1-1-e1618385046646-200x115.jpg"
+                                     alt="Kyrgyz IT Association" title="Kyrgyz IT Association"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://www.soros.kz/ru/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/2013_23_04__04_44_12__252-e1618384828857.jpg"
+                                     alt="Soros Foundation Kazakhstan" title="Soros Foundation Kazakhstan"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://soros.kg/about" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/logo-fsk-e1618384841217.jpg"
+                                     alt="Soros Foundation Kyrgyzstan" title="Soros Foundation Kyrgyzstan"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://fusionworks.md/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/fusionworks_logo_square-e1618384851489.png"
+                                     alt="Fusion Works" title="Fusion Works"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://www.ut.kg/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/image_2020-12-07_21-01-04-4-200x82.jpg"
+                                     alt="Unique Technologies" title="Unique Technologies"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="http://htp.kg/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/htpkr_logo-png-e1619108191534.png"
+                                     alt="High Technology Park" title="High Technology Park"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://fintech.aifc.kz/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/fintech2020-192x130.png"
+                                     alt="Fintech" title="Fintech"/>
+                            </a>
+                        </div>
+                                            <div class="partners-slider__slide">
+                            <a href="https://tekwill.md/" target="_blank">
+                                <img src="en/wp-content/uploads/sites/4/2021/04/tekwill_logo_secondary_color_versionwith-slogan-e1618931104404.png"
+                                     alt="Tekwill" title="Tekwill"/>
+                            </a>
+                        </div>
+                                    </div>
+                    </div>
+    </section>
+    <!-- END PARTNERS -->
+
+    <!-- NEWS -->
+    <section class="news">
+        <div class="container">
+            <h2 class="text-center"><span>News</span></h2>
+                        <div class="news-slider">
+                                    <div class="news-slider__slide">
+                        <a href="en/index.html%3Fp=133.html">
+                            <img src="en/wp-content/uploads/sites/4/2021/04/pexels-aleksandar-pasaric-325185-430x270.jpg"
+                                 alt="Four teams win Open Contracting Innovation Challenge with projects that promote competition and savings"/>
+                            <span class="news-slider__title">Four teams win Open Contracting Innovation Challenge with projects that promote competition and savings</span>
+                        </a>
+                        <div class="news-slider__desc">
+                            <p>The Open Contracting Partnership is proud to announce the winners of the Eastern Europe and Central Asia Innovation Challenge, a competition that supports the development of innovative tools based on open data on public procurement in Kazakhstan, Kyrgyzstan, and Moldova. </p>
+                        </div>
+                        <a href="en/index.html%3Fp=133.html"
+                           class="news-slider__date">September 10, 2021</a>
+                    </div>
+                            </div>
+        </div>
+            </section>
+    <!-- END NEWS -->
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div>
+            <p>Design by <a href="https://www.facebook.com/profile.php?id=100008061429542">Kate Kysla</a>. Website is licensed under a Creative Commons Attribution 4.0 International License. Open Contracting Partnership 2021</p>
+        </div>
+        <div class="footer-socials">
+                            <a href="https://www.facebook.com/OpenContracting" target="_blank">
+                    <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M374.244,285.825l14.105,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.116,0l0,-78.291c0,0 -36.407,-6.214 -71.213,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.541 32.798,3.865 49.709,3.865c16.911,0 33.511,-1.324 49.708,-3.865l0,-222.31l74.128,0Z" style="fill-rule:nonzero;"/></svg>
+                </a>
+                                    <a href="https://twitter.com/opencontracting" target="_blank">
+                <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104" style="fill-rule:nonzero;"/></svg>
+            </a>
+                                    <a href="https://www.youtube.com/channel/UCheWVbmRg_4ZukiAdSuk8Ew" target="_blank">
+                <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M501.303,132.765c-5.887,-22.03 -23.235,-39.377 -45.265,-45.265c-39.932,-10.7 -200.038,-10.7 -200.038,-10.7c0,0 -160.107,0 -200.039,10.7c-22.026,5.888 -39.377,23.235 -45.264,45.265c-10.697,39.928 -10.697,123.238 -10.697,123.238c0,0 0,83.308 10.697,123.232c5.887,22.03 23.238,39.382 45.264,45.269c39.932,10.696 200.039,10.696 200.039,10.696c0,0 160.106,0 200.038,-10.696c22.03,-5.887 39.378,-23.239 45.265,-45.269c10.696,-39.924 10.696,-123.232 10.696,-123.232c0,0 0,-83.31 -10.696,-123.238Zm-296.506,200.039l0,-153.603l133.019,76.802l-133.019,76.801Z" style="fill-rule:nonzero;"/></svg>
+            </a>
+                    </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.49 5.64">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#c9d300;stroke-miterlimit:22.93;stroke-width:1.42px;}.cls-2{fill:#c9d300;fill-rule:evenodd;}
+        </style>
+    </defs>
+    <g id="Шар_2" data-name="Шар 2">
+        <g id="background_about" data-name="background about">
+            <line class="cls-1" y1="2.83" x2="15.71" y2="2.83"/>
+            <polygon class="cls-2" points="15.63 2.83 12.94 5.64 15.66 5.64 18.49 2.81 15.69 0 12.78 0.02 15.63 2.83"/>
+        </g>
+    </g>
+</svg>

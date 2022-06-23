@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362.46 327.15">
+    <defs>
+        <style>
+            .cls-1{fill:#7e7e7d;}.cls-1,.cls-3,.cls-4{fill-rule:evenodd;}.cls-1,.cls-2,.cls-3{opacity:0.1;}.cls-2,.cls-3{fill:none;stroke:#7e7e7d;stroke-miterlimit:22.93;stroke-width:1.42px;}.cls-3{stroke-dasharray:7.09
+            4.25;}.cls-4{fill:#f1f2f1;}
+        </style>
+    </defs>
+    <g id="Шар_2" data-name="Шар 2">
+        <g id="objectives">
+            <path class="cls-1"
+                  d="M0,325.73a123.09,123.09,0,0,0,86.3-36.17,123.12,123.12,0,0,0,36.18-87.35A123.14,123.14,0,0,0,86.3,114.86,123.14,123.14,0,0,0,0,78.69V77.27a124.54,124.54,0,0,1,87.3,36.59,124.52,124.52,0,0,1,36.6,88.35,124.52,124.52,0,0,1-36.6,88.35A124.54,124.54,0,0,1,0,327.15Z"/>
+            <circle class="cls-2" cx="286.19" cy="231.73" r="75.56"/>
+            <path class="cls-3" d="M304,17.75a17.95,17.95,0,1,0,17.95,17.94A17.95,17.95,0,0,0,304,17.75Z"/>
+            <circle class="cls-2" cx="147.44" cy="124.95" r="124.24"/>
+            <path class="cls-4" d="M30.17,88a4.88,4.88,0,1,0-4.89-4.88A4.89,4.89,0,0,0,30.17,88Z"/>
+        </g>
+    </g>
+</svg>
