@@ -28,15 +28,15 @@
 
     1. Remove alternative language URLs with broken links, by replacing this with nothing:
 
-        <link rel="alternate" hreflang="(en|ru)" href="\S+" title="\S+" />\n
+            <link rel="alternate" hreflang="(en|ru)" href="\S+" title="\S+" />\n
 
     1. Replace Russian-to-English language switch URLs with homepage links, by replacing this with `$1$2en.html"`:
 
-        (<a href="(?:((?:\.\./)*)index.html)%3Fp=148.html">Международный опыт</a>\n</div>\n                            <div class="dropdown">\n                    <div class="selected">Русский</div>\n                    <div class="dropdown-drop text-center">\n                                                    <a href=")https://challenge.open-contracting.org/\S+"
+            (<a href="(?:((?:\.\./)*)index.html)%3Fp=148.html">Международный опыт</a>\n</div>\n                            <div class="dropdown">\n                    <div class="selected">Русский</div>\n                    <div class="dropdown-drop text-center">\n                                                    <a href=")https://challenge.open-contracting.org/\S+"
 
     1. Replace English-to-Russian language switch URLs with homepage links, by replacing this with `$1../$2"`:
 
-        (<a href="((\.\./)*index.html)%3Fp=241.html">Best Practices</a>\n</div>\n                            <div class="dropdown">\n                    <div class="selected">English</div>\n                    <div class="dropdown-drop text-center">\n                                                    <a href=")https://challenge.open-contracting.org/\S+"
+            (<a href="((\.\./)*index.html)%3Fp=241.html">Best Practices</a>\n</div>\n                            <div class="dropdown">\n                    <div class="selected">English</div>\n                    <div class="dropdown-drop text-center">\n                                                    <a href=")https://challenge.open-contracting.org/\S+"
 
 1. Check `debug.log` for errors.
 1. Check for occurrences of `challenge.open-contracting.org`. (**Note**: There are some missing font files.)
